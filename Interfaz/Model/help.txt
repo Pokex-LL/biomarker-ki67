@@ -1,0 +1,1 @@
+El modelo de ConvNext-Tiny con los pesos entrenados se puede obtener desde esta dirección.

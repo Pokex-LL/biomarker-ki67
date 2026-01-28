@@ -106,6 +106,17 @@ Este repositorio **no redistribuye datos de BCData**.
 
 ---
 
+### Pesos entrenados
+
+Los pesos entrenados del modelo ConvNeXt-Tiny fueron generados por el autor
+a partir de pesos preentrenados en ImageNet y fine-tuning sobre datasets
+públicos (BCData), utilizados exclusivamente con fines
+académicos y de investigación.
+
+Este repositorio no redistribuye datasets ni material con restricciones
+de uso comercial.
+---
+
 ## Uso académico y fair use
 
 El uso de todos los componentes se realiza bajo principios de:

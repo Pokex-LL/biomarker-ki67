@@ -1,1 +1,1 @@
-El modelo de ConvNext-Tiny con los pesos entrenados se puede obtener desde esta dirección.
+Véase el README para informacion de como obtener/descargar el modelo y sus pesos.

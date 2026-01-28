@@ -8,10 +8,10 @@ El proyecto incluye tanto código experimental utilizado durante la etapa de des
 
 ## Contenido del repositorio
 
-En este repositorio se encuentran:
+En este repositorio se incluyen:
 
 - Scripts de prueba y evaluación para:
-  - Cellpose 3
+  - Cellpose 3  
   - Cellpose SAM
 - Código de entrenamiento y evaluación de distintos backbones CNN
 - Interfaz gráfica final para inferencia y visualización
@@ -25,7 +25,7 @@ En este repositorio se encuentran:
 
 Todos los entornos utilizados en el proyecto se encuentran definidos como archivos `.yml` dentro de la carpeta `environments/`.
 
-> Es necesario tener **Miniconda o Anaconda** instalado para ejecutar cualquier parte del proyecto.
+> Es necesario contar con **Miniconda o Anaconda** para ejecutar cualquier componente del proyecto.
 
 Se utilizaron tres entornos principales:
 
@@ -35,49 +35,61 @@ Se utilizaron tres entornos principales:
 | Pruebas con Cellpose SAM | `cellpose_sam.yml` |
 | Interfaz y pipeline final | `biomarker_mvp.yml` |
 
-Para más información, véase [Instrucciones de entornos](Enviroments/Instructions.md)
+Para más información, véase  
+[`Environments/Instructions.md`](Environments/Instructions.md)
 
-## Ajustes de Rutas y Ejecución
-Los códigos tiene sus rutas necesarias y nombres por defecto como se ejecutaron, es necesario que se adapten estas según las necesidades y entornos del usuario.
-Para algunos códigos, existen formas explicitas de como ejecutarlos en el terminal, de ser así se explicará su procedimiento y comando en un archivo de texto plano en cada directorio.
+---
 
+## Ajustes de rutas y ejecución
 
+Los códigos contienen rutas y configuraciones por defecto correspondientes al entorno de desarrollo original.  
+Estas deben ser adaptadas según la estructura de directorios y el entorno del usuario.
 
-## Licencias y uso de terceros
+En algunos directorios se incluyen archivos de texto plano con instrucciones explícitas para la ejecución desde terminal, cuando corresponde.
 
-Este proyecto integra herramientas y modelos de terceros con fines
-**exclusivamente académicos y de investigación**.
+---
+
+## Licencias y uso de software de terceros
+
+Este proyecto integra herramientas y modelos de terceros con fines **exclusivamente académicos y de investigación**.
 
 Principales componentes utilizados:
 
-- **PyTorch** (BSD-style License)
-- **Cellpose** (BSD 3-Clause License, HHMI)
-- **ConvNeXt** (MIT License, Meta)
-- **ResNeXt** (BSD License, Facebook)
-- **EfficientNet-V2** (Apache License 2.0)
+- **PyTorch** — BSD-style License  
+- **Cellpose** — BSD 3-Clause License (Howard Hughes Medical Institute)  
+- **ConvNeXt** — MIT License (Meta Platforms, Inc.)  
+- **ResNeXt** — BSD License (Facebook, Inc.)  
+- **EfficientNet-V2** — Apache License 2.0  
 
-Los pesos preentrenados utilizados corresponden a modelos entrenados en ImageNet
-y se obtienen directamente desde PyTorch.
+Los pesos preentrenados utilizados corresponden a modelos entrenados en ImageNet y se obtienen directamente desde PyTorch.
 
-Los datasets **SHIDC-B-Ki-67** y **BCData** son públicos y se utilizan respetando
-sus términos de uso.  
-Este repositorio **no redistribuye imágenes, anotaciones ni pesos de modelos**.
+Los datasets **SHIDC-B-Ki-67** y **BCData** son públicos y se utilizan respetando estrictamente sus términos de uso.  
+Este repositorio **no redistribuye imágenes, anotaciones ni datasets completos**.
 
-Para mayor detalle, ver el archivo [`LICENCIAS.md`](LICENCIAS.md).
+Para mayor detalle, véase el archivo  
+[`LICENCIAS.md`](LICENCIAS.md)
 
+---
 
 ## Pesos del modelo ConvNeXt-Tiny
 
-Los pesos del modelo ConvNeXt-Tiny entrenado para detección de Ki-67
-se encuentran disponibles en el siguiente enlace:
+Los pesos del modelo ConvNeXt-Tiny entrenado para la detección del biomarcador Ki-67 se encuentran disponibles en el siguiente enlace:
 
-👉 [Descargar pesos ConvNeXt-Tiny (Google Drive)](ENLACE_AQUI)
+**[Descargar pesos ConvNeXt-Tiny (Google Drive)](https://usmcl-my.sharepoint.com/:f:/g/personal/claudio_zanetta_usm_cl/IgDlkGJdo5d3QI3QftXHUvAuAUbNkXzSstxwzuVLMEDW0Tw?e=xTpnng)**
 
 ### Detalles del entrenamiento
-- Arquitectura: ConvNeXt-Tiny (MIT License)
-- Inicialización: pesos preentrenados en ImageNet
-- Fine-tuning sobre: BCData (dataset público)
-- Uso: académico y de investigación
 
-Estos pesos se proveen únicamente con fines de investigación.
-No se redistribuyen imágenes ni anotaciones de los datasets utilizados.
+- Arquitectura: ConvNeXt-Tiny (MIT License)  
+- Inicialización: pesos preentrenados en ImageNet  
+- Fine-tuning sobre: BCData (dataset público)  
+- Uso: académico y de investigación  
+
+Los pesos compartidos fueron entrenados por el autor de este proyecto y **no redistribuyen imágenes ni anotaciones de los datasets utilizados**.
+
+---
+
+## Nota final
+
+Este repositorio corresponde a un prototipo académico orientado a investigación y validación experimental.  
+No ha sido validado para uso clínico y no pretende reemplazar la evaluación realizada por un patólogo.
+

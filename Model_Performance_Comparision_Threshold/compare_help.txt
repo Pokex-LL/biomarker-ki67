@@ -1,0 +1,28 @@
+** Para cada script es necesario ingresar un JSON con los .pth de los modelos a usar. **
+** Por ese motivo, la forma de ejecución es mediante el ingreso de parámetros **
+A continuacion se muestran los comandos empleados para las comparaciones que aparecen en el informe asociado.
+
+Comparar SHIDC SD:
+nohup python compare_models_shidc_sd.py \
+  --test_img_dir "/media/HDD2/SHIDC-B-Ki-67/256x256 cropped images/test256" \
+  --test_gt_dir  "/media/HDD2/SHIDC-B-Ki-67/256x256 cropped images/test256" \
+  --out_dir /media/HDD2/SHIDC_Model_Comparision_SD \
+  --models_json /home/folder1/folder2/Codigos_Finales/Dataset_Pathonet_Performance_SD/models_shidc_sd.json \
+  > compare_models_shidc_hd.log 2>&1 &
+
+
+Comparar SHIDC HD:
+nohup python compare_models_shidc_hd.py \
+  --test_img_dir "/media/HDD2/SHIDC-B-Ki-67/bare images/Test" \
+  --test_gt_dir  "/media/HDD2/SHIDC-B-Ki-67/bare images/Test" \
+  --out_dir /media/HDD2/SHIDC_Model_Comparision_HD \
+  --models_json /home/folder1/folder2/Codigos_Finales/Dataset_Pathonet_Performance_HD/models_shidc_hd.json \
+  > compare_models_shidc_hd.log 2>&1 &
+
+Comparar BCData:
+nohup python compare_models_bcdata.py \
+  --test_img_dir /media/HDD2/BCData/BCData/images/test \
+  --test_gt_dir  /media/HDD2/BCData/BCData/annotations/test \
+  --out_dir /media/HDD2/BCData_Model_Comparison \
+  --models_json /home/folder1/folder2/Codigos_Finales/Dataset_BCData_Performance/models_bcdata.json \
+  > compare_models_bcdata.log 2>&1 &

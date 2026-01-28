@@ -1,0 +1,1 @@
+El modelo de Cellpose SAM se descarga con la primera ejecución de la interfaz en este directorio.

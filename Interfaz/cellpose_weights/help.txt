@@ -1,1 +1,2 @@
 El modelo de Cellpose SAM se descarga con la primera ejecución de la interfaz en este directorio.
+Si bien no viene incluido, la primera vez que se ejecuta el .bat, se selecciona una ruta (La actual) donde quedará guardado para agilizar el proceso de segmentacion en ejecuciones posteriores.

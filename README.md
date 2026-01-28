@@ -38,7 +38,7 @@ Se utilizaron tres entornos principales:
 Para crear un entorno:
 ```bash
 conda env create -f environments/<nombre_entorno>.yml
-
+```
 
 ## Licencias y uso de terceros
 

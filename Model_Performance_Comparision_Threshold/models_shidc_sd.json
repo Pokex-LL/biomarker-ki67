@@ -1,0 +1,14 @@
+{
+  "convnext_tiny": {
+    "checkpoint": "/media/HDD2/SHIDC_Training_Compare_SD/convnext_tiny_lr5e-05_wd0.0001_bs32/best_f1posneg.pth",
+    "arch": "convnext_tiny"
+  },
+  "resnext50": {
+    "checkpoint": "/media/HDD2/SHIDC_Training_Compare_SD/resnext50_lr0.0001_wd0.0001_bs32/best_f1posneg.pth",
+    "arch": "resnext50"
+  },
+  "efficientnet_v2_s": {
+    "checkpoint": "/media/HDD2/SHIDC_Training_Compare_SD/efficientnet_v2_s_lr0.0001_wd0.0001_bs32/best_f1posneg.pth",
+    "arch": "efficientnet_v2_s"
+  }
+}

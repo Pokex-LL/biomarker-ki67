@@ -35,7 +35,7 @@ Se utilizaron tres entornos principales:
 | Pruebas con Cellpose SAM | `cellpose_sam.yml` |
 | Interfaz y pipeline final | `biomarker_mvp.yml` |
 
-Para más información, véase [`/Enviroments/Instructions.md`](Instructions.md)
+Para más información, véase [`/Enviroments/Instructions.md`](`/Enviroments/Instructions.md)
 
 ## Licencias y uso de terceros
 

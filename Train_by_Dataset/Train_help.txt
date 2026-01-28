@@ -1,0 +1,16 @@
+Para entrenar los modelos de SHIDC HD se emplearon los siguientes comandos:
+nohup python train_shidc_backbones.py --dataset_root /media/HDD2/SHIDC-B-Ki-67/HD_KI67_Patch_SAM_TV --out_root /media/HDD2/SHIDC_Training_Compare --arch convnext_tiny > convnext_tiny_train.log 2>&1 &
+nohup python train_shidc_backbones.py --dataset_root /media/HDD2/SHIDC-B-Ki-67/HD_KI67_Patch_SAM_TV --out_root /media/HDD2/SHIDC_Training_Compare --lr 1e-4 --arch resnext50 > resnext50_train.log 2>&1 &
+nohup python train_shidc_backbones.py --dataset_root /media/HDD2/SHIDC-B-Ki-67/HD_KI67_Patch_SAM_TV --out_root /media/HDD2/SHIDC_Training_Compare --lr 1e-4 --arch efficientnet_v2_s > efficientnet_v2_s_train.log 2>&1 &
+
+Para entrenar los modelos de SHIDC SD se emplearon los siguientes comandos:
+nohup python train_shidc_backbones.py --dataset_root /media/HDD2/SHIDC-B-Ki-67/SD_KI67_Patch_SAM_TV --out_root /media/HDD2/SHIDC_Training_Compare_SD --arch convnext_tiny > convnext_tiny_train.log 2>&1 &
+nohup python train_shidc_backbones.py --dataset_root /media/HDD2/SHIDC-B-Ki-67/SD_KI67_Patch_SAM_TV --out_root /media/HDD2/SHIDC_Training_Compare_SD --lr 1e-4 --arch resnext50 > resnext50_train.log 2>&1 &
+nohup python train_shidc_backbones.py --dataset_root /media/HDD2/SHIDC-B-Ki-67/SD_KI67_Patch_SAM_TV --out_root /media/HDD2/SHIDC_Training_Compare_SD --lr 1e-4 --arch efficientnet_v2_s > efficientnet_v2_s_train.log 2>&1 &
+
+Para entrenar los modelos de BCData se emplearon los siguientes comandos:
+nohup python train_bcdata_backbones.py \ --arch convnext_tiny \ --dataset_root /media/HDD2/PatchBCData \ --out_root /media/HDD2/BCData_Training_Compare \ > convnext_default.log 2>&1 &
+nohup python train_bcdata_backbones.py \ --arch resnext50 \ --lr 1e-4 \ --dataset_root /media/HDD2/PatchBCData \ --out_root /media/HDD2/BCData_Training_Compare \ > resnext_lr1e4.log 2>&1 &
+nohup python train_bcdata_backbones.py \ --arch efficientnet_v2_s \ --lr 1e-4 \ --dataset_root /media/HDD2/PatchBCData \ --out_root /media/HDD2/BCData_Training_Compare \ > effnetv2s_lr1e4.log 2>&1 &
+
+** Es posible modificarlos para una mayor personalización, en ese caso se recomienda revisar el código fuente. **

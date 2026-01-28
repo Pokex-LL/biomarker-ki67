@@ -38,3 +38,26 @@ Se utilizaron tres entornos principales:
 Para crear un entorno:
 ```bash
 conda env create -f environments/<nombre_entorno>.yml
+
+
+## Licencias y uso de terceros
+
+Este proyecto integra herramientas y modelos de terceros con fines
+**exclusivamente académicos y de investigación**.
+
+Principales componentes utilizados:
+
+- **PyTorch** (BSD-style License)
+- **Cellpose** (BSD 3-Clause License, HHMI)
+- **ConvNeXt** (MIT License, Meta)
+- **ResNeXt** (BSD License, Facebook)
+- **EfficientNet-V2** (Apache License 2.0)
+
+Los pesos preentrenados utilizados corresponden a modelos entrenados en ImageNet
+y se obtienen directamente desde PyTorch.
+
+Los datasets **SHIDC-B-Ki-67** y **BCData** son públicos y se utilizan respetando
+sus términos de uso.  
+Este repositorio **no redistribuye imágenes, anotaciones ni pesos de modelos**.
+
+Para mayor detalle, ver el archivo [`LICENCIAS.md`](LICENCIAS.md).

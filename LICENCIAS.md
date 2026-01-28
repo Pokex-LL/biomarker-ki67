@@ -83,12 +83,9 @@ No se redistribuyen pesos propietarios ni modificados.
   - Obligación de citar el trabajo original
 
 Referencia:
-@article{negahbani2021pathonet,
-title={PathoNet introduced as a deep neural network backend for evaluation of Ki-67 and tumor-infiltrating lymphocytes in breast cancer},
-author={Negahbani et al.},
-journal={Scientific Reports},
-year={2021}
-}
+Negahbani et al. (2021). PathoNet introduced as a deep neural network backend for evaluation of Ki-67 and tumor-infiltrating lymphocytes in breast cancer.
+*Scientific Reports*, 2021
+
 Este repositorio **no redistribuye imágenes ni anotaciones de SHIDC**.
 
 ---

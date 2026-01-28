@@ -61,3 +61,20 @@ sus términos de uso.
 Este repositorio **no redistribuye imágenes, anotaciones ni pesos de modelos**.
 
 Para mayor detalle, ver el archivo [`LICENCIAS.md`](LICENCIAS.md).
+
+
+## Pesos del modelo ConvNeXt-Tiny
+
+Los pesos del modelo ConvNeXt-Tiny entrenado para detección de Ki-67
+se encuentran disponibles en el siguiente enlace:
+
+👉 [Descargar pesos ConvNeXt-Tiny (Google Drive)](ENLACE_AQUI)
+
+### Detalles del entrenamiento
+- Arquitectura: ConvNeXt-Tiny (MIT License)
+- Inicialización: pesos preentrenados en ImageNet
+- Fine-tuning sobre: BCData (dataset público)
+- Uso: académico y de investigación
+
+Estos pesos se proveen únicamente con fines de investigación.
+No se redistribuyen imágenes ni anotaciones de los datasets utilizados.

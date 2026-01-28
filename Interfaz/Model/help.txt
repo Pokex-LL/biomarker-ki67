@@ -1,1 +1,1 @@
-Véase el README para informacion de como obtener/descargar el modelo y sus pesos.
+Véase el README para informacion de como obtener los pesos del modelo.

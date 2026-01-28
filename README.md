@@ -37,6 +37,12 @@ Se utilizaron tres entornos principales:
 
 Para más información, véase [Instrucciones de entornos](Enviroments/Instructions.md)
 
+## Ajustes de Rutas y Ejecución
+Los códigos tiene sus rutas necesarias y nombres por defecto como se ejecutaron, es necesario que se adapten estas según las necesidades y entornos del usuario.
+Para algunos códigos, existen formas explicitas de como ejecutarlos en el terminal, de ser así se explicará su procedimiento y comando en un archivo de texto plano en cada directorio.
+
+
+
 ## Licencias y uso de terceros
 
 Este proyecto integra herramientas y modelos de terceros con fines
